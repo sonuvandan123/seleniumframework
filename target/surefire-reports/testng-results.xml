@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="174543" started-at="2020-05-29T06:15:26 IST" finished-at="2020-05-29T06:18:21 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="174543" started-at="2020-05-29T06:15:26 IST" finished-at="2020-05-29T06:18:21 IST">
+      <class name="framework.frameworkbuilding.VerifyTitle">
+        <test-method status="PASS" signature="getHeadingOfCourses()[pri:0, instance:framework.frameworkbuilding.VerifyTitle@3901d134]" name="getHeadingOfCourses" duration-ms="32141" started-at="2020-05-29T06:17:18 IST" finished-at="2020-05-29T06:17:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getHeadingOfCourses -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:framework.frameworkbuilding.VerifyTitle@3901d134]" name="closeDriver" is-config="true" duration-ms="7044" started-at="2020-05-29T06:18:14 IST" finished-at="2020-05-29T06:18:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- framework.frameworkbuilding.VerifyTitle -->
+      <class name="framework.frameworkbuilding.HomePage">
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:framework.frameworkbuilding.HomePage@11a9e7c8]" name="basePageNavigation" duration-ms="57634" started-at="2020-05-29T06:15:26 IST" data-provider="getData" finished-at="2020-05-29T06:16:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vandan@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:framework.frameworkbuilding.HomePage@11a9e7c8]" name="basePageNavigation" duration-ms="36234" started-at="2020-05-29T06:16:24 IST" data-provider="getData" finished-at="2020-05-29T06:17:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mishra@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passwordmishra]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:framework.frameworkbuilding.HomePage@11a9e7c8]" name="closeDriver" is-config="true" duration-ms="19975" started-at="2020-05-29T06:17:50 IST" finished-at="2020-05-29T06:18:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- framework.frameworkbuilding.HomePage -->
+      <class name="framework.frameworkbuilding.MenuBarPresent">
+        <test-method status="PASS" signature="isPresentMenuBar()[pri:0, instance:framework.frameworkbuilding.MenuBarPresent@14d3bc22]" name="isPresentMenuBar" duration-ms="17609" started-at="2020-05-29T06:17:00 IST" finished-at="2020-05-29T06:17:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isPresentMenuBar -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:framework.frameworkbuilding.MenuBarPresent@14d3bc22]" name="closeDriver" is-config="true" duration-ms="3740" started-at="2020-05-29T06:18:10 IST" finished-at="2020-05-29T06:18:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- framework.frameworkbuilding.MenuBarPresent -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
