@@ -2,7 +2,14 @@ package framework.frameworkbuilding;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -12,22 +19,30 @@ import resources.Base;
 
 public class HomePage extends Base 
 {
+	WebDriver driver;
+	public static Logger log=LogManager.getLogger(Base.class.getName());
+	@BeforeTest
 	public void initialize() throws IOException
 	{
 		driver=initializeDriver();
-		driver.get(prop.getProperty("url"));
+		log.info("Driver initializes");
+		
 	}
 	
 	@Test(dataProvider="getData")
 	public void basePageNavigation(String userName,String password) throws IOException
 	{
-		
+		System.out.println("basepagenAVMERHOT**********************");
+		driver.get(prop.getProperty("url"));
+		log.info("Navigated to url");
 		LandingPage landingPage=new LandingPage(driver);
 		landingPage.getLogin().click();
 		LoginPage loginPage=new LoginPage(driver);
 		loginPage.getEmail().sendKeys(userName);;
 		loginPage.getPassword().sendKeys(password);
 		loginPage.getloginButton().click();
+		log.info("moved to login page");
+
 	}
 	@DataProvider
 	public Object[][] getData()
@@ -43,9 +58,11 @@ public class HomePage extends Base
 		data[1][1]="passwordmishra";
 		return data;
 	}
-	@AfterTest
-	public void closeDriver()
-	{
-		driver.close();
-	}
+	
+	 @AfterTest
+	 public void closeDriver()
+	 { 
+		 driver.close(); 
+	 }
+	 
 }

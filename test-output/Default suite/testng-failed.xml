@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="framework.frameworkbuilding.MenuBarPresent">
+      <class name="framework.frameworkbuilding.HomePage">
         <methods>
-          <include name="isPresentMenuBar"/>
+          <include name="initialize"/>
+          <include name="basePageNavigation" invocation-numbers="0"/>
+          <include name="closeDriver"/>
         </methods>
-      </class> <!-- framework.frameworkbuilding.MenuBarPresent -->
+      </class> <!-- framework.frameworkbuilding.HomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
